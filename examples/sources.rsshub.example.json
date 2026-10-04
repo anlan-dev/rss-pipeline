@@ -1,0 +1,12 @@
+{
+  "version": "1",
+  "comment": "可选示例：依赖本机 RSSHub 的源。将需要的条目并入 sources.json 的 feeds 数组，并确保 RSSHub 已在对应端口运行。请把 REPLACE_WITH_AUTHOR_ID 换成真实作者 ID。",
+  "feeds": [
+    { "id": "zhihu-example-posts", "name": "知乎作者文章（示例）", "category": "知乎", "tier": "B", "enabled": true,
+      "url": "http://localhost:1200/zhihu/posts/people/REPLACE_WITH_AUTHOR_ID",
+      "filters": { "title_blacklist": [], "title_whitelist": [] } },
+    { "id": "zhihu-example-answers", "name": "知乎作者回答（示例）", "category": "知乎", "tier": "B", "enabled": true,
+      "url": "http://localhost:1200/zhihu/people/answers/REPLACE_WITH_AUTHOR_ID",
+      "filters": { "title_blacklist": [], "title_whitelist": [] } }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "version": "1",
+  "comment": "示例配置：复制为 sources.json 后编辑。feeds 为 RSS/Atom 源列表，digest 为日报输出配置（可选）。",
+  "digest": {
+    "title": "RSS 信息日报",
+    "tags": ["rss", "digest"]
+  },
+  "feeds": [
+    { "id": "simon-willison", "name": "Simon Willison", "category": "科技", "tier": "A", "enabled": true,
+      "url": "https://simonwillison.net/atom/everything/",
+      "filters": { "title_blacklist": [], "title_whitelist": [] } },
+    { "id": "ruanyifeng", "name": "阮一峰的网络日志", "category": "科技", "tier": "A", "enabled": true,
+      "url": "https://www.ruanyifeng.com/blog/atom.xml",
+      "filters": { "title_blacklist": [], "title_whitelist": [] } },
+    { "id": "marginal-revolution", "name": "Marginal Revolution", "category": "思想", "tier": "A", "enabled": true,
+      "url": "https://marginalrevolution.com/feed",
+      "filters": { "title_blacklist": [], "title_whitelist": [] } },
+    { "id": "astral-codex-ten", "name": "Astral Codex Ten", "category": "思想", "tier": "A", "enabled": true,
+      "url": "https://www.astralcodexten.com/feed",
+      "filters": { "title_blacklist": [], "title_whitelist": [] } },
+    { "id": "luchanghai", "name": "卢昌海", "category": "科学", "tier": "A", "enabled": true,
+      "url": "https://www.changhai.org/feed.xml",
+      "filters": { "title_blacklist": ["微博", "视频"], "title_whitelist": [] } }
+  ]
+}
